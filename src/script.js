@@ -18,7 +18,12 @@ faqButtons.forEach((btn) => {
 
     const isExpanded = btn.getAttribute("aria-expanded") === "true";
 
-    answer.classList.toggle("hidden");
+    const willExpand = !isExpanded;
+
+    btn.setAttribute("aria-expanded", String(willExpand));
+
+    answer.classList.toggle("hidden", !willExpand);
+    answer.setAttribute("aria-hidden", String(!willExpand));
 
     btn.setAttribute("aria-expanded", String(!isExpanded));
 
@@ -27,7 +32,9 @@ faqButtons.forEach((btn) => {
     btn.querySelector(".icon-minus")?.classList.toggle("hidden");
 
     if (btn.querySelector(".sr-only")) {
-      sr.textContent = isExpanded ? "Show answer" : "Hide answer"; // safe update
+      btn.querySelector(".sr-only").textContent = isExpanded
+        ? "Show answer"
+        : "Hide answer";
     }
   });
 });
