@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+    <script type="module" src="./script.js"></script>
+    <title>FAQ accordion</title>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-h-screen bg-[url(./background-pattern-mobile.svg)] bg-size-[100%_auto] bg-top bg-no-repeat md:bg-[url(./background-pattern-desktop.svg)] bg-purple-100"
+  >
+    <main
+      class="mt-32.5 ml-6 mr-6 p-6 flex flex-col gap-6 rounded-lg bg-white drop-shadow-[0_32px_56px_rgba(80,0,118,0.1)] md:mt-41.75 md:ml-0 md:mr-0 md:p-10 md:gap-8 md:rounded-2xl md:w-150"
+    >
+      <!-- Title container -->
+      <div class="flex gap-6 items-center">
+        <img
+          class="w-6 h-6 md:w-10 md:h-10"
+          src="../assets/images/icon-star.svg"
+          alt="Icon illustration star"
+          aria-hidden="true"
+        />
+        <h1
+          class="font-bold text-32px tracking-normal text-purple-950 md:text-56px md:leading-16.5"
+        >
+          FAQs
+        </h1>
+      </div>
+
+      <!-- All questions container -->
+      <div class="flex flex-col gap-6">
+        <!-- 1st FAQ item -->
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center justify-between">
+            <p
+              class="font-semibold text-base tracking-normal text-purple-950 md:text-lg md:leading-5"
+            >
+              What is Frontend Mentor, and how will it help me?
+            </p>
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-text-1"
+              class="faq-button cursor-pointer shrink-0 ml-6"
+            >
+              <!-- Plus icon -->
+              <svg
+                class="icon-plus"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="31"
+                fill="none"
+                viewBox="0 0 30 31"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#AD28EB"
+                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"
+                />
+              </svg>
+              <!-- Minus icon -->
+              <svg
+                class="icon-minus hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="31"
+                fill="none"
+                viewBox="0 0 30 31"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#301534"
+                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"
+                />
+              </svg>
+              <span class="sr-only">Show answer</span>
+            </button>
+          </div>
+          <p
+            id="answer-text-1"
+            class="hidden answer-text font-normal text-sm leading-[150%] text-purple-600 md:text-base md:leading-6"
+          >
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </div>
+
+        <div class="h-0.5 bg-purple-100" role="separator"></div>
+
+        <!-- 2nd FAQ item -->
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center justify-between">
+            <p
+              class="font-semibold text-base tracking-normal text-purple-950 md:text-lg md:leading-5"
+            >
+              Is Frontend Mentor free?
+            </p>
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-text-2"
+              class="faq-button cursor-pointer shrink-0 ml-6"
+            >
+              <svg
+                class="icon-plus"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="31"
+                fill="none"
+                viewBox="0 0 30 31"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#AD28EB"
+                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"
+                />
+              </svg>
+              <svg
+                class="icon-minus hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="31"
+                fill="none"
+                viewBox="0 0 30 31"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#301534"
+                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"
+                />
+              </svg>
+              <span class="sr-only">Show answer</span>
+            </button>
+          </div>
+          <p
+            id="answer-text-2"
+            class="hidden answer-text font-normal text-sm leading-[150%] text-purple-600 md:text-base md:leading-6"
+          >
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
+        </div>
+
+        <div class="h-0.5 bg-purple-100" role="separator"></div>
+
+        <!-- 3rd FAQ item -->
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center justify-between">
+            <p
+              class="font-semibold text-base tracking-normal text-purple-950 md:text-lg md:leading-5"
+            >
+              Can I use Frontend Mentor projects in my portfolio?
+            </p>
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-text-3"
+              class="faq-button cursor-pointer shrink-0 ml-6"
+            >
+              <svg
+                class="icon-plus"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="31"
+                fill="none"
+                viewBox="0 0 30 31"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#AD28EB"
+                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"
+                />
+              </svg>
+              <svg
+                class="icon-minus hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="31"
+                fill="none"
+                viewBox="0 0 30 31"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#301534"
+                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"
+                />
+              </svg>
+              <span class="sr-only">Show answer</span>
+            </button>
+          </div>
+          <p
+            id="answer-text-3"
+            class="hidden answer-text font-normal text-sm leading-[150%] text-purple-600 md:text-base md:leading-6"
+          >
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </p>
+        </div>
+
+        <div class="h-0.5 bg-purple-100" role="separator"></div>
+
+        <!-- 4th FAQ item -->
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center justify-between">
+            <p
+              class="font-semibold text-base tracking-normal text-purple-950 md:text-lg md:leading-5"
+            >
+              How can I get help if I'm stuck on a Frontend Mentor challenge?
+            </p>
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-text-4"
+              class="faq-button cursor-pointer shrink-0 ml-6"
+            >
+              <svg
+                class="icon-plus"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="31"
+                fill="none"
+                viewBox="0 0 30 31"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#AD28EB"
+                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"
+                />
+              </svg>
+              <svg
+                class="icon-minus hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="31"
+                fill="none"
+                viewBox="0 0 30 31"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#301534"
+                  d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"
+                />
+              </svg>
+              <span class="sr-only">Show answer</span>
+            </button>
+          </div>
+          <p
+            id="answer-text-4"
+            class="hidden answer-text font-normal text-sm leading-[150%] text-purple-600 md:text-base md:leading-6"
+          >
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-5">
+      <div
+        class="font-normal text-base leading-6 tracking-normal text-purple-950 text-center pb-8"
+      >
+        Challenge by
+        <a
+          class="text-violet-600 focus:text-violet-600 hover:text-purple-600"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor.</a
+        ><br />
+        Coded by
+        <a
+          class="text-violet-600 focus:text-violet-600 hover:text-purple-600"
+          href="https://www.frontendmentor.io/profile/VirginiaPat"
+          target="_blank"
+          >Virginia Patrika.</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

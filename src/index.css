@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-purple-950: #301534;
+  --color-purple-600: #8b6990;
+  --color-purple-100: #f8eeff;
+  --color-violet-600: #ad28eb;
+  --color-violet-hover: #c867f5;
+
+  --font-work-sans: "Work Sans", sans-serif;
+
+  --text-56px: 3.5rem;
+  --text-32px: 2rem;
+
+  /* custom breakpoin:648px */
+  --breakpoint-md: 40.5rem;
+}
+
+.faq-button:hover .icon-plus,
+.faq-button:focus-visible .icon-plus {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(99%) saturate(1151%)
+    hue-rotate(237deg) brightness(94%) contrast(104%);
+}
+
+.faq-button:hover .icon-minus,
+.faq-button:focus-visible .icon-minus {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(11%) saturate(5955%)
+    hue-rotate(257deg) brightness(96%) contrast(92%);
+}
+
+/* Visible focus ring για keyboard navigation */
+.faq-button:focus-visible {
+  outline: 2px solid #ad28eb;
+  outline-offset: 4px;
+  border-radius: 50%;
+}
