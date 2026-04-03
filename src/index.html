@@ -32,7 +32,7 @@
         <img
           class="w-6 h-6 md:w-10 md:h-10"
           src="../assets/images/icon-star.svg"
-          alt="Icon illustration star"
+          alt=""
           aria-hidden="true"
         />
         <h1
@@ -47,15 +47,16 @@
         <!-- 1st FAQ item -->
         <div class="flex flex-col gap-6">
           <div class="flex items-center justify-between">
-            <p
+            <h3
               class="font-semibold text-base tracking-normal text-purple-950 md:text-lg md:leading-5"
             >
               What is Frontend Mentor, and how will it help me?
-            </p>
+            </h3>
             <button
               type="button"
               aria-expanded="false"
               aria-controls="answer-text-1"
+              aria-label="Show answer"
               class="faq-button cursor-pointer shrink-0 ml-6"
             >
               <!-- Plus icon -->
@@ -107,19 +108,21 @@
         <!-- 2nd FAQ item -->
         <div class="flex flex-col gap-6">
           <div class="flex items-center justify-between">
-            <p
+            <h3
               class="font-semibold text-base tracking-normal text-purple-950 md:text-lg md:leading-5"
             >
               Is Frontend Mentor free?
-            </p>
+            </h3>
             <button
               type="button"
               aria-expanded="false"
               aria-controls="answer-text-2"
+              aria-label="Show answer"
               class="faq-button cursor-pointer shrink-0 ml-6"
             >
               <svg
                 class="icon-plus"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
                 height="31"
@@ -164,15 +167,16 @@
         <!-- 3rd FAQ item -->
         <div class="flex flex-col gap-6">
           <div class="flex items-center justify-between">
-            <p
+            <h3
               class="font-semibold text-base tracking-normal text-purple-950 md:text-lg md:leading-5"
             >
               Can I use Frontend Mentor projects in my portfolio?
-            </p>
+            </h3>
             <button
               type="button"
               aria-expanded="false"
               aria-controls="answer-text-3"
+              aria-label="Show answer"
               class="faq-button cursor-pointer shrink-0 ml-6"
             >
               <svg
@@ -221,15 +225,16 @@
         <!-- 4th FAQ item -->
         <div class="flex flex-col gap-6">
           <div class="flex items-center justify-between">
-            <p
+            <h3
               class="font-semibold text-base tracking-normal text-purple-950 md:text-lg md:leading-5"
             >
               How can I get help if I'm stuck on a Frontend Mentor challenge?
-            </p>
+            </h3>
             <button
               type="button"
               aria-expanded="false"
               aria-controls="answer-text-4"
+              aria-label="Show answer"
               class="faq-button cursor-pointer shrink-0 ml-6"
             >
               <svg
@@ -263,14 +268,14 @@
               <span class="sr-only">Show answer</span>
             </button>
           </div>
-          <p
+          <h3
             id="answer-text-4"
             class="hidden answer-text font-normal text-sm leading-[150%] text-purple-600 md:text-base md:leading-6"
           >
             The best place to get help is inside Frontend Mentor's Discord
             community. There's a help channel where you can ask questions and
             seek support from other community members.
-          </p>
+          </h3>
         </div>
       </div>
     </main>
@@ -283,7 +288,7 @@
         <a
           class="text-violet-600 focus:text-violet-600 hover:text-purple-600"
           href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
+        >
           >Frontend Mentor.</a
         ><br />
         Coded by
